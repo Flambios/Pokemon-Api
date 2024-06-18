@@ -1,9 +1,6 @@
 {
   "name": "pokemon-api",
   "version": "1.0.0",
-  "engines": {
-   "node": "12.11.1"
-   },
   "description": "An awesome API rest to handle some pokemons.",
   "main": "app.js",
   "scripts": {
