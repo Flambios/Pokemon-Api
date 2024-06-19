@@ -4,6 +4,9 @@
   
   "description": "An awesome API rest to handle some pokemons.",
   "main": "app.js",
+  "engines": {
+    "node": "12.11.1"
+  },
   "scripts": {
     "start": "NODE_ENV=production node app.js",
     "dev": "NODE_ENV=development nodemon app.js"
