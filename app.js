@@ -11,7 +11,7 @@ console.log(process.env.PORT)
 app
     .use(favicon(__dirname + '/favicon.ico'))
     .use(bodyParser.json())
-    .use(cors())
+    .use(cors());
 
 sequelize.initDb()
 
