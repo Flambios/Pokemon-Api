@@ -16,7 +16,7 @@ app
 sequelize.initDb()
 
 app.get('/', (req ,res) => {
-    res.json('Hello World')
+    res.json('Hello World I`m Carchacroque')
 })
 
 require('./src/routes/login')(app)
