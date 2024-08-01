@@ -9,11 +9,11 @@ module.exports = (req, res, next) => {
     return res.status(401).json({ message })
   }
     
-    const token = authorizationHeader.split(' ')[1]
+    const token = authorizationHeader.split(' ')[0]
     const decodedToken = jwt.verify(token, privateKey, (error, decodedToken) => {
     if(error) {
       const message = `L'utilisateur n'est pas autorisé à accèder à cette ressource.`
-      return res.status(401).json({ message, data: error })
+      return res.status(401).json({ token, data: error })
     }
   
     const userId = decodedToken.userId
